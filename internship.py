@@ -6,7 +6,7 @@
 
 import random
 
-# Define a function to generate multiple-choice questions with shuffled options
+
 def generate_multiple_choice_question(rule, num_questions):
     questions = []
     for _ in range(num_questions):
@@ -21,7 +21,6 @@ def generate_multiple_choice_question(rule, num_questions):
                 f"({n}, 1)"
             ]
             answer = f"({n}, {m})"
-            random.shuffle(choices)  # Shuffle the answer choices
             questions.append((question, choices, answer))
         
         elif rule == "list_to_matrix_access":
@@ -35,7 +34,7 @@ def generate_multiple_choice_question(rule, num_questions):
                 f"matrix({col}, {row})"
             ]
             answer = f"matrix[{row}][{col}]"
-            random.shuffle(choices)  # Shuffle the answer choices
+            random.shuffle(choices)  
             questions.append((question, choices, answer))
         
         elif rule == "list_to_matrix_conversion":
@@ -47,7 +46,7 @@ def generate_multiple_choice_question(rule, num_questions):
                 "scikit-learn"
             ]
             answer = "NumPy"
-            random.shuffle(choices)  # Shuffle the answer choices
+            random.shuffle(choices)  
             questions.append((question, choices, answer))
         
         # Add new rules here...
@@ -62,7 +61,7 @@ def generate_multiple_choice_question(rule, num_questions):
                 f"np.empty(({n}, {m}))"
             ]
             answer = f"np.zeros(({n}, {m}))"
-            random.shuffle(choices)  # Shuffle the answer choices
+            random.shuffle(choices)  
             questions.append((question, choices, answer))
         
         elif rule == "list_to_matrix_identity_shape":
@@ -76,7 +75,7 @@ def generate_multiple_choice_question(rule, num_questions):
 
             ]
             answer = f"({n}, {n})"
-            random.shuffle(choices)  # Shuffle the answer choices
+            random.shuffle(choices) 
             questions.append((question, choices, answer))
         
         elif rule == "list_to_matrix_diagonal_element":
@@ -90,7 +89,7 @@ def generate_multiple_choice_question(rule, num_questions):
                 "8"
             ]
             answer = str(2 + 2 * min(row, col))
-            random.shuffle(choices)  # Shuffle the answer choices
+            random.shuffle(choices)  
             questions.append((question, choices, answer))
         
         elif rule == "list_to_matrix_transpose_shape":
@@ -104,7 +103,7 @@ def generate_multiple_choice_question(rule, num_questions):
                 f"({m}, {m})"
             ]
             answer = f"({m}, {n})"
-            random.shuffle(choices)  # Shuffle the answer choices
+            random.shuffle(choices)  
             questions.append((question, choices, answer))
         
         elif rule == "list_to_matrix_concatenate_shape":
@@ -119,7 +118,7 @@ def generate_multiple_choice_question(rule, num_questions):
                 f"({n}, {n})"
             ]
             answer = f"({m1 + m2}, {n})"
-            random.shuffle(choices)  # Shuffle the answer choices
+            random.shuffle(choices)  
             questions.append((question, choices, answer))
         
         elif rule == "list_to_matrix_conversion_library":
@@ -131,7 +130,7 @@ def generate_multiple_choice_question(rule, num_questions):
                 "scikit-learn"
             ]
             answer = "NumPy"
-            random.shuffle(choices)  # Shuffle the answer choices
+            random.shuffle(choices)  
             questions.append((question, choices, answer))
         
         elif rule == "list_to_matrix_shape_unknown":
@@ -143,7 +142,7 @@ def generate_multiple_choice_question(rule, num_questions):
                 "(n, m)"
             ]
             answer = "(n, 1)"
-            random.shuffle(choices)  # Shuffle the answer choices
+            random.shuffle(choices)  
             questions.append((question, choices, answer))
     
     return questions
@@ -163,7 +162,7 @@ rules = [
    
 ]
 
-# Generate and print questions for each rule
+ #printing questions for each rule
 num_questions_per_rule = 100
 all_questions = []
 

@@ -108,4 +108,3 @@
     - Answer: (n, 1)
 
 
-These are the rules used in the code, along with examples for each rule. You can modify or add more rules as needed.

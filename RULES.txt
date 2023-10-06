@@ -1,0 +1,111 @@
+﻿1. **list_to_matrix_shape**
+   - Rule Description: This rule generates questions about the shape of a matrix when converting a Python list.
+   - Example: "If you convert a Python list with 12 elements into a matrix, what will be the shape of the resulting matrix?"
+   - Choices: 
+     - (3, 4)
+     - (4, 3)
+     - (1, 12)
+     - (12, 1)
+   - Answer: (3, 4)
+
+
+2. **list_to_matrix_access**
+   - Rule Description: This rule generates questions about how to access elements in a matrix.
+   - Example: "How would you access an element at row 2 and column 3 in the corresponding matrix?"
+   - Choices: 
+     - matrix[2][3]
+     - matrix(2, 3)
+     - matrix[3][2]
+     - matrix(3, 2)
+   - Answer: matrix[2][3]
+
+
+3. **list_to_matrix_conversion**
+   - Rule Description: This rule generates questions about the Python library used to convert a list into a matrix (2D array).
+   - Example: "What Python library can be used to convert a list into a matrix (2D array)?"
+   - Choices: 
+     - NumPy
+     - pandas
+     - matplotlib
+     - scikit-learn
+   - Answer: NumPy
+
+
+4. **list_to_matrix_zeros_shape**
+   - Rule Description: This rule generates questions about the shape of a matrix filled with zeros.
+   - Example: "If you want to create a matrix filled with zeros of size 2 x 3, what function should you use in NumPy?"
+   - Choices: 
+     - np.zeros((2, 3))
+     - np.ones((2, 3))
+     - np.matrix((2, 3))
+     - np.empty((2, 3))
+   - Answer: np.zeros((2, 3))
+
+
+5. **list_to_matrix_identity_shape**
+   - Rule Description: This rule generates questions about the shape of an identity matrix.
+   - Example: "What is the shape of an identity matrix of size 4 x 4?"
+   - Choices: 
+     - (4, 4)
+     - (4, 1)
+     - (1, 4)
+     - (, )
+   - Answer: (4, 4)
+
+
+6. **list_to_matrix_diagonal_element**
+   - Rule Description: This rule generates questions about the value of an element in a diagonal matrix.
+   - Example: "If you have a list of diagonal elements [2, 4, 6, 8], what would be the value of the element at row 1 and column 1 in the diagonal matrix?"
+   - Choices: 
+     - 2
+     - 4
+     - 6
+     - 8
+   - Answer: 2
+
+
+7. **list_to_matrix_transpose_shape**
+   - Rule Description: This rule generates questions about the shape of a matrix's transpose.
+   - Example: "If you have a matrix of shape (3, 4), what is the shape of its transpose?"
+   - Choices: 
+     - (3, 4)
+     - (4, 3)
+     - (3, 3)
+     - (4, 4)
+   - Answer: (4, 3)
+
+
+8. **list_to_matrix_concatenate_shape**
+   - Rule Description: This rule generates questions about the shape of a matrix after concatenating two matrices horizontally.
+   - Example: "When concatenating two matrices horizontally, what is the shape of the resulting matrix if the first matrix has shape (2, 3) and the second matrix has shape (2, 4)?"
+   - Choices: 
+     - (2, 7)
+     - (7, 2)
+     - (2, 3)
+     - (3, 2)
+   - Answer: (2, 7)
+
+
+9. **list_to_matrix_conversion_library**
+   - Rule Description: This rule generates questions about the Python library that provides a `tolist()` function to convert a matrix back to a list.
+   - Example: "Which Python library provides a `tolist()` function to convert a matrix back to a list?"
+   - Choices: 
+     - NumPy
+     - pandas
+     - matplotlib
+     - scikit-learn
+   - Answer: NumPy
+
+
+10. **list_to_matrix_shape_unknown**
+    - Rule Description: This rule generates questions about the shape of a matrix when converting a Python list with an unknown number of elements.
+    - Example: "If you have a Python list with an unknown number of elements, what is the shape of the resulting matrix when converting it to a NumPy array?"
+    - Choices: 
+      - (1, 1)
+      - (n, 1)
+      - (1, n)
+      - (n, m)
+    - Answer: (n, 1)
+
+
+These are the rules used in the code, along with examples for each rule. You can modify or add more rules as needed.
